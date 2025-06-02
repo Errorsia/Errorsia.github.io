@@ -546,7 +546,7 @@ body .shell-main-bottom-bottom ul li {
 }
 
 body .shell-main-bottom-bottom ul li span {
-  font-size: 10px;
+  font-size: 13px; /*Original: 10*/
 }
 
 body .shell-main-bottom-bottom ul li:hover {
