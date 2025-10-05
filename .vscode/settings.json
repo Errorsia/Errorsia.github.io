@@ -1,0 +1,25 @@
+{
+    // 默认情况：4 空格
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+
+    // HTML 特殊情况：2 空格
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+
+    // 如果你还写 Vue/JSON/JSX，也可以加上
+    "[vue]": {
+        "editor.tabSize": 2
+    },
+    /*"[json]": {
+        "editor.tabSize": 2
+    },*/
+    "[javascriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2
+    }
+}

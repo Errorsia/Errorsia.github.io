@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our development</title>
-    <link rel="icon" href="/image/errorsia_studio_icon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our development</title>
+  <link rel="icon" href="/image/errorsia_studio_icon.png" type="image/png">
 </head>
 <body>
-    This Page is Building Now<br>
-    <a href="./index.html">Return home</a>
+  <p>This Page is Building Now</p>
+  <p><a href="./index.html">Return home</a></p>
+  <p id="message">You will be redirected in 5 seconds...</p>
+
+  <script>
+    let seconds = 5;
+    const messageEl = document.getElementById("message");
+
+    const timer = setInterval(() => {
+      seconds--;
+      if (seconds > 0) {
+        messageEl.textContent = `You will be redirected in ${seconds} seconds...`;
+      } else {
+        clearInterval(timer);
+        window.location.href = "./index.html";
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
