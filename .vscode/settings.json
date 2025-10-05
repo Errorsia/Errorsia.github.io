@@ -6,7 +6,7 @@
     // HTML 特殊情况：2 空格
     "[html]": {
         "editor.tabSize": 2,
-        "editor.insertSpaces": true
+        "editor.insertSpaces": false
     },
 
     // 如果你还写 Vue/JSON/JSX，也可以加上

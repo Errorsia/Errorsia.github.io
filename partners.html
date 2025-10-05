@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Errorsia Studio - 我们的伙伴</title>
-    <link rel="icon" href="/image/errorsia_studio_icon.png" type="image/png">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/all.css">
+    <link rel="icon" href="/image/errorsia_studio_icon.png" type="image/png" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/all.css" />
     <style>
-        body .shell-main-nav ul .nav-box {
-            left: 480px;
-        }
+      body .shell-main-nav ul .nav-box {
+        left: 480px;
+      }
 
-        body .shell-main {
-            margin-bottom: 0;
-        }
+      body .shell-main {
+        margin-bottom: 0;
+      }
 
-        body .shell-main-nav {
-            margin-bottom: 0;
-        }
+      body .shell-main-nav {
+        margin-bottom: 0;
+      }
 
-        header {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            background-image: linear-gradient(to bottom, #a1e6ff, #a1e6ff);
-            height: 700px;
-        }
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to bottom, #a1e6ff, #a1e6ff);
+        height: 700px;
+      }
 
-        header img {
-            width: 500px;
-            height: 500px;
-            position: relative;
-        }
+      header img {
+        width: 500px;
+        height: 500px;
+        position: relative;
+      }
 
-        header h2 {
-            font: 100 60px '';
-            margin-bottom: 20px;
-            font-family: font;
-            letter-spacing: 5px;
-            border-bottom: 2px solid rgb(134, 134, 118);
-            color: #ffffff;
-        }
+      header h2 {
+        font: 100 60px "";
+        margin-bottom: 20px;
+        font-family: font;
+        letter-spacing: 5px;
+        border-bottom: 2px solid rgb(134, 134, 118);
+        color: #ffffff;
+      }
 
-        header p {
-            font: 100 30px '';
-            letter-spacing: 5px;
-        }
+      header p {
+        font: 100 30px "";
+        letter-spacing: 5px;
+      }
 
-        .h-b {
-            display: flex;
-            justify-content: space-evenly;
-            width: 90%;
+      .h-b {
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+      }
 
-        }
+      .h-b p {
+        color: #fff;
+        margin-bottom: 10px;
+      }
 
-        .h-b p {
-            color: #fff;
-            margin-bottom: 10px;
-        }
+      .h-b-l,
+      .h-b-r {
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
 
-        .h-b-l,
-        .h-b-r {
-            width: 20%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        /* ------------------------------------------------------------------ */
-        /* footer {
+      /* ------------------------------------------------------------------ */
+      /* footer {
             max-width: 1430px;
             display: flex;
             justify-content: center;
@@ -192,84 +190,84 @@
             margin: 30px 0;
         }*/
 
+      .bottom {
+        position: sticky;
+        top: 20px;
+      }
 
-        .bottom {
-            position: sticky;
-            top: 20px;
+      .b {
+        width: 100%;
+        background-color: #fff;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border: rgba(0, 0, 0, 0.216) 1px solid;
+      }
+
+      @media (max-width: 1000px) {
+        .h-b-r,
+        .h-b-l,
+        .right {
+          display: none;
         }
 
-        .b {
-            width: 100%;
-            background-color: #fff;
-            height: 60px;
-            line-height: 60px;
-            text-align: center;
-            border: rgba(0, 0, 0, 0.216) 1px solid;
+        .content {
+          justify-content: center;
         }
-
-        @media (max-width:1000px) {
-
-            .h-b-r,
-            .h-b-l,
-            .right {
-                display: none;
-            }
-
-            .content {
-                justify-content: center;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="shell">
-        <div class="shell-main">
-            <div class="shell-main-nav">
-                <div class="logo">
-                    <img src="./image/miku.png" alt="">
-                    <span>Errorsia Studio</span>
-                </div>
-                <ul>
-                    <li></li>
-                    <li><a href="./index.html">关于我们</a></li>
-                    <li><a href="./products.html">产品中心</a></li>
-                    <li><a href="./development.html">我们的发展</a></li>
-                    <li><a href="./partners.html">我们的伙伴</a></li>
-                    <!-- <li><a href="./Login.html">登录</a></li> -->
-                    <div class="nav-box"></div>
-                </ul>
-            </div>
+      <div class="shell-main">
+        <div class="shell-main-nav">
+          <div class="logo">
+            <img src="./image/miku.png" alt="" />
+            <span>Errorsia Studio</span>
+          </div>
+          <ul>
+            <li></li>
+            <li><a href="./index.html">关于我们</a></li>
+            <li><a href="./products.html">产品中心</a></li>
+            <li><a href="./development.html">我们的发展</a></li>
+            <li><a href="./partners.html">我们的伙伴</a></li>
+            <!-- <li><a href="./Login.html">登录</a></li> -->
+            <div class="nav-box"></div>
+          </ul>
         </div>
-        <header>
-            <h2>我们的伙伴</h2>
-            <!-- <p>只做最优质的产品</p> -->
-            <div class="h-b">
-                <div class="h-b-l">
-                    <div class="h-b-l-h">
-                        <p>KWY Tech 孔维科技</p>
-                        <span>一家充满良心的科技公司</span>
-                    </div>
-                    <div class="h-b-l-b">
-                        <p>KASA 航天局</p>
-                        <span>KASA (KWY Aeronautics and Space Administration),<br>孔维航空航天局</span>
-                    </div>
-                </div>
-                <img src="./image/website_design.png" alt="">
-                <div class="h-b-r">
-                    <div class="h-b-r-h">
-                        <p>Nanflas CY2B Studio</p>
-                        <span>已本收购KWY Tech(孔维科技)收购</span>
-                    </div>
-                    <div class="h-b-r-b">
-                        <p>敬请期待</p>
-                        <span><br></span>
-                        <!-- <span>在我们这边下过单的客户都纷纷秒不绝口，我们制作出的网页都会超乎您的预期，在不收取额外费用的同时制作出比其他店更好更强的效果</span> -->
-                    </div>
-                </div>
+      </div>
+      <header>
+        <h2>我们的伙伴</h2>
+        <!-- <p>只做最优质的产品</p> -->
+        <div class="h-b">
+          <div class="h-b-l">
+            <div class="h-b-l-h">
+              <p>KWY Tech 孔维科技</p>
+              <span>一家充满良心的科技公司</span>
             </div>
-        </header>
-        <!-- <footer>
+            <div class="h-b-l-b">
+              <p>KASA 航天局</p>
+              <span
+                >KASA (KWY Aeronautics and Space Administration),<br />孔维航空航天局</span
+              >
+            </div>
+          </div>
+          <img src="./image/website_design.png" alt="" />
+          <div class="h-b-r">
+            <div class="h-b-r-h">
+              <p>Nanflas CY2B Studio</p>
+              <span>已本收购KWY Tech(孔维科技)收购</span>
+            </div>
+            <div class="h-b-r-b">
+              <p>敬请期待</p>
+              <span><br /></span>
+              <!-- <span>在我们这边下过单的客户都纷纷秒不绝口，我们制作出的网页都会超乎您的预期，在不收取额外费用的同时制作出比其他店更好更强的效果</span> -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- <footer>
             <div class="content">
                 <div class="left">
                     <div class="top">
@@ -412,11 +410,9 @@
 
             </div>
         </footer> -->
-        <div class="shell-main-footer">
-            <span>Copytight - Errorsia Studio</span>
-        </div>
+      <div class="shell-main-footer">
+        <span>Copytight - Errorsia Studio</span>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
