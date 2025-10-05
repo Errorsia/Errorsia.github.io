@@ -243,7 +243,7 @@
         <div class="h-b">
           <div class="h-b-l">
             <div class="h-b-l-h">
-              <p>KWY Tech 孔维科技</p>
+              <p>KWY Tech 孔维科技<span style="font-size: xx-small;color:rgb(255, 81, 0)">已倒闭</span></p>
               <span>一家充满良心的科技公司</span>
               <br/>
               <!-- <br/> -->
@@ -258,14 +258,14 @@
           </div>
           <img src="./image/website_design.png" alt="" />
           <div class="h-b-r">
-            <div class="h-b-r-h">
+            <div class="h-b-r-h", onclick="goTo('https://github.com/Nanflas202202/')">
               <p>Nanflas CS2B Studio</p>
               <!-- <span>已本收购KWY Tech(孔维科技)收购</span> -->
               <span>一个高中生组成的工作室, 独立于KWY Tech, 主要由TsukiKenga担任开发</span>
             </div>
             <div class="h-b-r-b">
               <p>敬请期待</p>
-              <span><br /></span>
+              <br />
               <!-- <span>在我们这边下过单的客户都纷纷秒不绝口，我们制作出的网页都会超乎您的预期，在不收取额外费用的同时制作出比其他店更好更强的效果</span> -->
             </div>
           </div>
@@ -418,5 +418,16 @@
         <span>Copytight - Errorsia Studio</span>
       </div>
     </div>
+  <script>
+    // 封装跳转函数
+    function goTo(url) {
+      if (url) {
+        window.location.href = url;
+      } else {
+        // 如果没传网址，可以设置一个默认跳转
+        window.location.href = "./index.html";
+      }
+    }
+  </script>
   </body>
 </html>
