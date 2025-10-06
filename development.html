@@ -288,6 +288,16 @@
 
         font-weight: 600;
       }
+
+      .msg {
+        margin-top: 10px;
+
+        font-size: 20px;
+        
+        font-weight: 300;
+
+        color: #fff;
+      }
     </style>
   </head>
 
@@ -319,9 +329,12 @@
               <p class="label">
                 Return Home ? <a href="./index.html">Click Here</a>
               </p>
-
-              <p class="label", id="message">You will be redirected in 5 seconds...</p>
             </form>
+
+            <p class="msg" , id="message">
+              You will be redirected in
+              <span style="color: rgb(140, 0, 255)">10</span> seconds...
+            </p>
           </div>
         </div>
       </div>
@@ -334,7 +347,7 @@
       const timer = setInterval(() => {
         seconds--;
         if (seconds > 0) {
-          messageEl.textContent = `You will be redirected in ${seconds} seconds...`;
+          messageEl.innerHTML = `You will be redirected in <span style="color:rgb(140, 0, 255)">${seconds}</span> seconds...`;
         } else {
           clearInterval(timer);
           window.location.href = "./index.html";
