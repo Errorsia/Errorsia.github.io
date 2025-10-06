@@ -127,3 +127,70 @@
 
         animation-delay: calc(-1s * var(--i));
       }
+
+      /* 动画 */
+
+      @keyframes animate {
+        0%,
+        100% {
+          transform: translateY(-40px);
+        }
+
+        50% {
+          transform: translate(40px);
+        }
+      }
+
+      .box .square:nth-child(1) {
+        top: -50px;
+
+        right: -60px;
+
+        width: 100px;
+
+        height: 100px;
+      }
+
+      .box .square:nth-child(2) {
+        top: 150px;
+
+        left: -100px;
+
+        width: 120px;
+
+        height: 120px;
+
+        z-index: 2;
+      }
+
+      .box .square:nth-child(3) {
+        bottom: 50px;
+
+        right: -60px;
+
+        width: 80px;
+
+        height: 80px;
+
+        z-index: 2;
+      }
+
+      .box .square:nth-child(4) {
+        bottom: -80px;
+
+        left: 100px;
+
+        width: 50px;
+
+        height: 50px;
+      }
+
+      .box .square:nth-child(5) {
+        top: -90px;
+
+        left: 140px;
+
+        width: 60px;
+
+        height: 60px;
+      }
