@@ -32,6 +32,7 @@
       .main {
         position: relative;
         display: flex;
+        /* flex-wrap: wrap; */
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -41,6 +42,7 @@
         background-color: #fff;
         transition: 0.3s;
         padding: 50px;
+        margin: 0 5px;
         border: 1px solid #000;
       }
 
@@ -128,16 +130,29 @@
         align-items: center;
       }
 
+      .section-middle {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        border-bottom: solid 1px #000;
+      }
+
       .section-bottom {
         position: relative;
       }
 
       .section-middle-box {
         width: 100%;
+        /* width: 80%; */
+        box-sizing: border-box;
         display: flex;
         /* justify-content: space-between; 左右分布 */
         align-items: center; /* 垂直居中 */
-        margin: 50px 0;
+        margin: 20px;
+        padding: 15px;
+        /* border: rgba(0, 0, 0, 0.15) 1px solid; */
+        /* border-radius: 10px; */
       }
 
       .section-middle-left {
@@ -162,13 +177,20 @@
         font-size: 20px;
       }
 
-      .section-middle-right img {
+      /* .section-middle-right img {
         width: 400px;
-      }
+      } */
 
       .section-middle-left span {
         text-align: center;
         font-size: 30px;
+      }
+
+      .bottom-divider {
+        width: 80vw;
+        border-bottom: solid 1px #000;
+        /* padding-bottom: 50px; */
+        margin-top: 50px;
       }
 
       .Skills {
@@ -310,7 +332,7 @@
             <div class="section-top" style="border-bottom: solid 1px #000">
               <div class="section-top-left">
                 <p>Studio Name:<br /></p>
-                Errorsia<br />
+                Errorsia Studio<br />
                 <p>Founded:<br /></p>
                 2024<br />
                 <!-- <p>:Speciality<br /></p>
@@ -319,7 +341,7 @@
               <div class="section-top-middle"></div>
               <div class="section-top-right">
                 <p>Developers:</p>
-                Ariskanyaa
+                Errorsia
               </div>
             </div>
             <div class="section-middle">
@@ -347,10 +369,7 @@
                             </div>
                         </div> -->
 
-              <div
-                class="section-middle-box"
-                style="border-bottom: solid 1px #000; padding-bottom: 50px"
-              >
+              <div class="section-middle-box">
                 <div class="section-middle-left">
                   <span>Jiyu Immunodeficiency Viruses<br />(JIV)</span>
                 </div>
@@ -358,6 +377,8 @@
                   <span>Developing now!</span>
                 </div>
               </div>
+
+              <!-- <div class="bottom-divider"></div> -->
 
               <!-- <h2 style="font-size: 30px; margin: 30px 0;">Painting everyday</h2>
                         <span>“My favorite illustration”</span>
