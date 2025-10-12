@@ -138,16 +138,6 @@
         padding: 0 0 10px 0;
       }
 
-      .section-bottom {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch; /* 让子元素横向拉伸 */
-        position: relative;
-        width: 100%;
-        max-width: 100%;
-      }
-
       .section-middle-box {
         width: 100%;
         /* width: 80%; */
@@ -204,13 +194,27 @@
         margin-top: 50px;
       }
 
+      .section-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* 让子元素横向拉伸 */
+        /* align-items: stretch;  */
+        /* position: relative; */
+        max-width: 100%;
+        width: 100%;
+        padding: 0 40px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
       .Skills {
         /* width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 40px 0; */
-        width: 100%;
+        justify-content: space-evenly; */
+        margin: 40px 0;
+        /* width: 100%; */
         display: grid;
         /* 自动根据屏幕宽度决定一行放几个 */
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -441,40 +445,40 @@
                             </div>
                         </div>-->
             </div>
-          </section>
-          <div class="section-bottom">
-            <h2 style="margin-top: 60px; color: #22a39f">
-              Programming Languages
-            </h2>
-            <ul
-              class="Skills"
-              style="border-bottom: solid 1px #000; padding-bottom: 40px"
-            >
-              <li>
-                <span>C++</span>
-                <p>★★★★★</p>
-              </li>
-              <li>
-                <span>Python</span>
-                <p>★★★★★</p>
-              </li>
-              <li>
-                <span>HTML</span>
-                <p>★★★★☆</p>
-              </li>
-              <li>
-                <span>JavaScript</span>
-                <p>★★★★☆</p>
-              </li>
-              <li>
-                <span>CSS</span>
-                <p>★★★☆☆</p>
-              </li>
-              <!-- <li><span>structure</span>
+            <div class="section-bottom">
+              <h2 style="margin-top: 60px; color: #22a39f">
+                Programming Languages
+              </h2>
+              <ul
+                class="Skills"
+                style="border-bottom: solid 1px #000; padding-bottom: 40px"
+              >
+                <li>
+                  <span>C++</span>
+                  <p>★★★★★</p>
+                </li>
+                <li>
+                  <span>Python</span>
+                  <p>★★★★★</p>
+                </li>
+                <li>
+                  <span>HTML</span>
+                  <p>★★★★☆</p>
+                </li>
+                <li>
+                  <span>JavaScript</span>
+                  <p>★★★★☆</p>
+                </li>
+                <li>
+                  <span>CSS</span>
+                  <p>★★★☆☆</p>
+                </li>
+                <!-- <li><span>structure</span>
                                 <p>★★★★★</p>
                             </li> -->
-            </ul>
-          </div>
+              </ul>
+            </div>
+          </section>
           <aside>
             <h2 style="font-size: 30px; margin-top: 30px">Readme</h2>
             <br />
