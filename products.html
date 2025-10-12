@@ -122,15 +122,11 @@
         margin: 5px 0;
       }
 
-      .section-middle,
-      .section-bottom {
+      .section-middle {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      }
-
-      .section-middle {
         max-width: 100%;
         width: 100%;
         padding: 0 20px 30px 20px;
@@ -143,7 +139,13 @@
       }
 
       .section-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch; /* 让子元素横向拉伸 */
         position: relative;
+        width: 100%;
+        max-width: 100%;
       }
 
       .section-middle-box {
@@ -203,19 +205,34 @@
       }
 
       .Skills {
-        width: 100%;
+        /* width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        margin: 40px 0; */
+        width: 100%;
+        display: grid;
+        /* 自动根据屏幕宽度决定一行放几个 */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px; /* 控制格子间距 */
         margin: 40px 0;
+        justify-items: center; /* 每个格子里的内容居中 */
+        box-sizing: border-box;
       }
 
       .Skills li {
-        width: 33%;
+        /* width: 33%;
         display: flex;
         justify-content: space-evenly;
         margin: 20px 0;
         height: 50px;
+        cursor: pointer; */
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* li 内部文字居中 */
+        justify-content: center;
+        height: 60px;
         cursor: pointer;
       }
 
@@ -223,11 +240,11 @@
       .Skills li p {
         text-align: center;
         font-size: 20px;
-        display: block;
-        width: 50%;
+        /* display: block; */
+        /* width: 50%; */
+        flex: 1;
         transition: 0.2s;
         letter-spacing: 0px;
-        margin: 0 10px;
       }
 
       .Skills li p {
@@ -276,11 +293,6 @@
 
       .Achievement-right img:hover {
         transform: scale(1.1);
-      }
-
-      article {
-        display: flex;
-        justify-content: center;
       }
 
       aside {
@@ -430,40 +442,39 @@
                         </div>-->
             </div>
           </section>
-          <article>
-            <div class="section-bottom">
-              <h2 style="margin-top: 60px; color: #22a39f">
-                Programming Languages
-              </h2>
-              <ul
-                class="Skills"
-                style="border-bottom: solid 1px #000; padding-bottom: 40px"
-              >
-                <li>
-                  <span>C++</span>
-                  <p>★★★★★</p>
-                </li>
-                <li>
-                  <span>Python</span>
-                  <p>★★★★★</p>
-                </li>
-                <li>
-                  <span>HTML</span>
-                  <p>★★★★☆</p>
-                </li>
-                <li>
-                  <span>JavaScript</span>
-                  <p>★★★★☆</p>
-                </li>
-                <!-- <li><span>color</span>
-                                <p>★★★★☆</p>
-                            </li>
-                            <li><span>structure</span>
+          <div class="section-bottom">
+            <h2 style="margin-top: 60px; color: #22a39f">
+              Programming Languages
+            </h2>
+            <ul
+              class="Skills"
+              style="border-bottom: solid 1px #000; padding-bottom: 40px"
+            >
+              <li>
+                <span>C++</span>
+                <p>★★★★★</p>
+              </li>
+              <li>
+                <span>Python</span>
+                <p>★★★★★</p>
+              </li>
+              <li>
+                <span>HTML</span>
+                <p>★★★★☆</p>
+              </li>
+              <li>
+                <span>JavaScript</span>
+                <p>★★★★☆</p>
+              </li>
+              <li>
+                <span>CSS</span>
+                <p>★★★☆☆</p>
+              </li>
+              <!-- <li><span>structure</span>
                                 <p>★★★★★</p>
                             </li> -->
-              </ul>
-            </div>
-          </article>
+            </ul>
+          </div>
           <aside>
             <h2 style="font-size: 30px; margin-top: 30px">Readme</h2>
             <br />
