@@ -164,7 +164,7 @@ body .shell-main-lbt {
   background-color: #978989;
   margin-bottom: 150px;
   overflow: hidden;
-  background-image: url("../image/lbt.gif");
+  background-image: url("../resources/images/lbt.gif");
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: contain;
@@ -360,7 +360,7 @@ body .shell-main-header-right {
   width: 40%;
   height: 95%;
   background-size: cover;
-  background-image: url("../image/top.png");
+  background-image: url("../resources/images/top.png");
   border: 5px solid #000;
 }
 
